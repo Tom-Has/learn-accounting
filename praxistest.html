@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testversion - Chilli Business Services - Übungen zu BWL</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Styling/complete_style.css">
+	<script src="Skripte_Praxis/praxisbsp_tabelle_ust.js"></script>
+	<script src="Skripte_Praxis/praxisbsp_text_ust.js"></script>
+	<script src="Skripte_Praxis/praxisbsp_text_zins.js"></script>
+	<script src="Skripte_Praxis/field_table_rand_assign.js"></script>
+	<script src="Skripte_Praxis/check_string_num_format.js"></script>
+</head>
+
+<body>
+	<!--<img id="pic" src="Styling/Logo_neu_fin.png"><br>-->
+	<h1 id="title">Herzlich willkommen zum praktischen Test in BWL!</h1>
+	<p id="intro">Bitte wähle eine der untenstehenden Aufgaben durch Klick auf den entsprechenden Button.<br>
+		<a href="theorietest.html">Hier geht's zum theoretischen Test.</a>
+	</p>
+	<hr>
+	<div id="frame">
+		<div id="buttonfield">
+			<div class="buttoncolumn">
+				In diesem Feld kannst du die Anzahl der Aufgaben für die USt-Tabellen-Berechung angeben (standardmäßig 1).
+				<input type="text" id="num_ust_table">
+				Betätige diesen Button, um die Tabellen-Berechung für Umsatzsteuer aufzurufen.
+				<button type="button" onclick="ust_task_table()">USt-Tabelle</button>
+				<hr class="midline">
+				Betätige diesen Button, um eine Textaufgabe für Umsatzsteuer aufzurufen.
+				<button type="button" onclick="ust_task_text()">USt-Text</button>
+			</div>
+			<div class="buttoncolumn">
+				Betätige einen der Buttons, um eine Textaufgabe für Zinsrechnung aufzurufen.
+				<button type="button" onclick="zins_task_kredit()">Kredit-Text</button>
+				<button type="button" onclick="zins_task_zinsen()">Zinsen-Text</button>
+				<hr class="midline">
+				<button type="button" onclick="pv_th()">[...]</button>
+			</div>
+			<div class="buttoncolumn">
+				<button type="button" onclick="ust_th()">[...]</button>
+				<button type="button" onclick="bh_th()">[...]</button>
+				<button type="button" onclick="pv_th()">[...]</button>
+				<button type="button" onclick="ea_th()">[...]</button>
+				<button type="button" onclick="allg_th()">[...]</button>
+			</div>
+			<div class="buttoncolumn">
+				<button type="button" onclick="ust_th()">[...]</button>
+				<button type="button" onclick="bh_th()">[...]</button>
+				<button type="button" onclick="pv_th()">[...]</button>
+			</div>
+		</div>
+		<hr class="midline">
+		<div id="questionfield">
+			Hier steht eine Frage
+		</div>
+		<div id="answerfield">
+			Hier wird die Antwort eingeblendet
+		</div>
+	</div>
+	<hr>
+	<footer id="close">Anmerkungen:<br>Werte sind kaufmännisch gerundet einzutragen, also auf zwei Nachkommastellen genau. Beachte, dass zwischen Ziffern
+			keine Nicht-Ziffer-Zeichen stehen dürfen.<br>
+	</footer>
+</body>
+</html>

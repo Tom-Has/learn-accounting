@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chilli Business Services - Übungen zu BWL</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Styling/complete_style.css">
+	<script src="Skripte_Theorie/shuffle_fragensammlung.js"></script>
+	<script src="Skripte_Theorie/hauptfunktionen_theorie.js"></script>
+	<script src="Skripte_Theorie/fragen_theorie.js"></script>
+</head>
+
+<body>
+	<!--<img id="pic" src="Styling/Logo_neu_fin.png"><br>-->
+	<h1 id="title">Herzlich willkommen zum theoretischen Test in BWL!</h1>
+	<p id="intro">Bitte wähle eine der untenstehenden Aufgaben durch Klick auf den entsprechenden Button.<br>
+		<a href="praxistest.html" target="blank">Hier geht's zum praktischen Test.</a>
+	</p>
+	<hr>
+	<div id="frame">
+		<p>Bitte wähle zuerst eine der beiden Optionen Übungstest (mit laufender Korrektur) oder Testsimulation (keine laufende Korrektur und 
+			Auswertung der Antworten mit Punkten).
+		</p>
+		<span><input type="radio" name="auswahl" id="unverbindlich"> Markieren für Übungstest 
+			<input type="radio" name="auswahl" id="simulation"> Markieren für Testsimulation
+		</span><br>
+		<div id="buttonfield">
+			<button type="button" onclick="ust_th()">Umsatzsteuer</button>
+			<button type="button" onclick="bh_th()">Buchhaltung</button>
+			<button type="button" onclick="pv_th()">Personalverrechnung</button>
+			<button type="button" onclick="ea_th()">E/A-Rechnung</button>
+			<button type="button" onclick="est_th()">Einkommensteuer</button>
+		</div>
+	</div>
+	<hr id="midline">
+	<div id="varfield">
+	</div>
+	<!--<div id="answerfield">
+		Hier wird die Antwort eingeblendet
+	</div>-->
+	<hr>
+	<footer id="close">Einige Anmerkungen zur Auswertung der Fragen:<br>Datumsangaben bei offenen Fragen müssen exakt im Format "tt.mm.jjjj" 
+		beantwortet werden, einstellige Angaben	sind dabei mit einer führenden Null aufzufüllen. Bsp.: "1.1.2019" würde als falsch gewertet, 
+		korrekt wäre "01.01.2019".<br>Bei Aufzählungen für offene Fragen ist die Reihenfolge egal, allerdings müssen die Antworten exakt sein,
+		inkl. Groß-/Kleinschreibung. Bsp.: "buchhaltung" würde als falsch gewertet, korrekt wäre "Buchhaltung". Randständige Leerzeichen sind 
+		nicht relevant. Bsp.: " &nbsp;&nbsp;Buchhaltung&nbsp;&nbsp; " wäre immer noch korrekt.<br>Bei MC-Fragen werden für falsche Hakerl keine 
+		Punkte abgezogen. Bitte versuche trotzdem, die Fragen so ehrlich wie möglich zu beantworten.<br>Wenn du noch nicht sattelfest bist, 
+		probiere zuerst den Übungsmodus!
+	</footer>
+</body>
+
+</html>
