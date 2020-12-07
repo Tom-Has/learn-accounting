@@ -1,0 +1,2 @@
+# learn-accounting
+This is a small learning tool to prepare accounting students for their final course exams. It is a client-sided web application (JavaScript, HMTL, CSS) and was made as a side project for an employer. Access to source code is limited because it uses copyright-protected content. The folders each contain one HTML file and JavaScript files with the required functions (separate for thereotic and practical functionalities). The CSS file is used in both HTML files.
